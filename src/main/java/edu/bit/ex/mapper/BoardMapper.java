@@ -10,6 +10,8 @@ import edu.bit.ex.vo.BoardVO;
 public interface BoardMapper {
 
     List<BoardVO> getList();
+
+    BoardVO getVO(int bid);
     
     
 	

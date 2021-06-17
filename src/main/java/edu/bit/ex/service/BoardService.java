@@ -8,6 +8,8 @@ public interface BoardService {
 
     List<BoardVO> getList();
     
+    public BoardVO getVO(int bid);
+    
     
 	
 }
