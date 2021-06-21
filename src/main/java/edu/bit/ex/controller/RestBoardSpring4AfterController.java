@@ -26,6 +26,7 @@ public class RestBoardSpring4AfterController {
     @Autowired
     private BoardService boardService;
 
+    // 자바객체 1ist를 json형태로 바꾸어줌
     @GetMapping("/rest/after")
     public List<BoardVO> restAfter(Model model) {
         log.info("restAfter()..");

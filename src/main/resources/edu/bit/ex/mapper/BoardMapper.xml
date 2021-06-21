@@ -11,7 +11,13 @@
 	
 	<select id="getVO" resultType="edu.bit.ex.vo.BoardVO">
   		 <![CDATA[
-  		 	select bId, bName, bTitle, bContent, bDate, bHit, bGroup, bStep, bIndent from mvc_board where bid=#{bid}
+  		 	select * from mvc_board where bid=#{bid}
   		 ]]>
 	</select>
+	
+	<delete id="delete">
+		 <![CDATA[
+  		 	delete from mvc_board where bid=#{bid}
+  		 ]]>
+	</delete>
 </mapper>

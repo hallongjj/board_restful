@@ -28,6 +28,12 @@ public class BoardServiceImpl implements BoardService{
         return boardMapper.getVO(bid);
     }
 
+    @Override
+    public Integer remove(int bid) {
+        log.info("Service: delete()..");
+        return  boardMapper.delete(bid);
+    }
+
     
     
 	

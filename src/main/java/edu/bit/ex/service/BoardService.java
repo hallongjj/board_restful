@@ -8,7 +8,9 @@ public interface BoardService {
 
     List<BoardVO> getList();
     
-    public BoardVO getVO(int bid);
+    BoardVO getVO(int bid);
+
+    Integer remove(int bid);
     
     
 	
